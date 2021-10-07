@@ -116,8 +116,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         add: './VERSION.json'
-        branch: main
         cwd: './rFFmedia'
+        default_author: github_actions
         message: 'Release v${{ env.LATEST_BUILD_VERSION }}'
         push: true
         tag: 'v${{ env.LATEST_BUILD_VERSION }}'
